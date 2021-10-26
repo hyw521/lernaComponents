@@ -1,7 +1,7 @@
 {
   "name": "hyw-todo-list",
   "version": "1.0.0",
-  "description": "> TODO: description",
+  "description": "a component",
   "author": "hyw521 <1499276590@qq.com>",
   "homepage": "https://github.com/hyw521/lernaComponents#readme",
   "license": "ISC",
@@ -19,7 +19,7 @@
     "package.json"
   ],
   "publishConfig": {
-    "registry": "https://registry.npm.taobao.org/"
+    "registry": "https://registry.npmjs.org"
   },
   "repository": {
     "type": "git",
