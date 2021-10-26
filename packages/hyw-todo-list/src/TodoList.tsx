@@ -9,7 +9,7 @@ const TodoList = () => {
     const [source, setSource] = useState<item[]>([]);
   
     const init = () => {
-        setSource([{name:'hyw',age:24}])
+        setSource([{name:'hyw',age:24},{name:'xl',age:23}])
     };
     useEffect(() => {
       init();
