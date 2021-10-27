@@ -22,5 +22,6 @@ const TodoList = () => {
         }
       </ul>
     )
-  }
+}
+export { TodoList }
   

@@ -9,4 +9,5 @@ const TodoList = () => {
     }, []);
     return (React.createElement("ul", null, source.map((s, index) => React.createElement("li", { key: index }, s.name))));
 };
+export { TodoList };
 //# sourceMappingURL=TodoList.js.map
