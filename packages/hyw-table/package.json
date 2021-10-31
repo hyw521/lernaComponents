@@ -1,8 +1,8 @@
 {
-  "name": "hyw-todo-list",
-  "version": "1.0.5",
-  "description": "a component",
-  "author": "hyw521 <1499276590@qq.com>",
+  "name": "hyw-table",
+  "version": "1.0.0",
+  "description": "a table component",
+  "author": "yw <1499276590qq.com>",
   "homepage": "https://github.com/hyw521/lernaComponents#readme",
   "license": "ISC",
   "main": "lib/index.js",
@@ -18,9 +18,6 @@
     "styles/*",
     "package.json"
   ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hyw521/lernaComponents.git"
@@ -30,8 +27,5 @@
   },
   "bugs": {
     "url": "https://github.com/hyw521/lernaComponents/issues"
-  },
-  "dependencies": {
-    "react": "^17.0.2"
   }
 }

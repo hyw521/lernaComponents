@@ -1,5 +1,5 @@
 ---
-name: hyw-todo-list
+name: hyw-table
 menu: Components
 ---
 
@@ -8,18 +8,20 @@ import { Playground, Props } from "docz";
 
 
 ## 安装
-## cnpm install hyw-todo-list
+## cnpm install hyw-table
 
 
 ## 引用
+## import { HTable } from 'hyw-table';
 import { TodoList } from "../packages/hyw-todo-list/src/TodoList.tsx";
+import { HTable } from "../packages/hyw-table/src/Table.tsx";
 
 ## 属性
 
-<Props of={TodoList} isToggle/>
+<Props of={ HTable } isToggle/>
 
 ## 基础用法
 
 <Playground>
-  <TodoList></TodoList>
+  <HTable></HTable>
 </Playground>
