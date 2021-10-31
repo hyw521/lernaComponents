@@ -18,7 +18,7 @@ const TodoList = () => {
     return (
       <ul>
         {
-          source.map((s, index: number) => <li key={index}>{s.name}</li>)
+          source.map((s:item, index: number) => <li key={index}>{s.name}</li>)
         }
       </ul>
     )
