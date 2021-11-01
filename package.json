@@ -5,23 +5,27 @@
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve",
+    "dumi:dev": "dumi dev",
+    "dumi:build": "lerna run build && dumi build",
     "build": "lerna exec tsc",
     "publish": "lerna exec tsc && lerna publish"
   },
   "devDependencies": {
-    "@types/react": "^17.0.33",
-    "@types/react-dom": "^17.0.10",
+    "@types/react": "^16.9.14",
+    "@types/react-dom": "^16.9.14",
     "docz": "^2.3.1",
     "lerna": "^4.0.0",
-    "typescript": "^4.4.4"
+    "typescript": "^4.4.4",
+    "babel-plugin-import": "^1.13.3"
   },
   "workspaces": [
     "packages/*"
   ],
   "dependencies": {
     "antd": "^4.16.13",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "dumi": "^1.1.7",
+    "react": "^16.9.14",
+    "react-dom": "^16.9.14"
   },
   "version": "0.0.2"
 }

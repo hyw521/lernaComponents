@@ -1,2 +1,6 @@
 node_modules
 .docz
+.umi
+.umi-production
+.env.local
+dist/
