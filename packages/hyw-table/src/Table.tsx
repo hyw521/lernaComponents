@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Table } from "antd";
+import 'antd/dist/antd.css';
 import { tableProps } from "./type";
 
 
