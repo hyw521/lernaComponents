@@ -6,4 +6,4 @@ const HTable = (props) => {
     return (React.createElement(Table, { columns: columns, dataSource: dataSource }));
 };
 export { HTable };
-//# sourceMappingURL=Table.js.map
+//# sourceMappingURL=table.js.map
