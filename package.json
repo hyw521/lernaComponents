@@ -8,7 +8,7 @@
     "dumi:dev": "dumi dev",
     "dumi:build": "lerna run build && dumi build",
     "build": "lerna exec tsc",
-    "publish": "lerna exec tsc && lerna publish"
+    "publish": "lerna publish"
   },
   "devDependencies": {
     "@types/react": "^16.9.14",
