@@ -30,5 +30,6 @@
   "dependencies": {
     "@hb-components/table": "^1.0.1",
     "@hb-components/todo": "^1.0.1"
-  }
+  },
+  "gitHead": "5e88bb0d7d28c9821f9e672799fc5f964b0c58d4"
 }
