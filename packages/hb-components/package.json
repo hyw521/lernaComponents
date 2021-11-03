@@ -1,6 +1,6 @@
 {
   "name": "hb-components",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "yw <1499276590qq.com>",
@@ -30,8 +30,8 @@
   },
   "homepage": "https://github.com/hyw521/lernaComponents#readme",
   "dependencies": {
-    "@hb-components/table": "^0.0.8",
-    "@hb-components/todolist": "^0.0.8"
+    "@hb-components/table": "^0.0.9",
+    "@hb-components/todolist": "^0.0.9"
   },
   "gitHead": "e16e0389a50cfc8cb31709e7b14584934e355c95"
 }
