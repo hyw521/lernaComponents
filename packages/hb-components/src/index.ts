@@ -1,2 +1,2 @@
-export { default as Table } from '@hb-components/table';
-export { default as TodoList } from '@hb-components/todolist';
+export { default as HBTable } from '@hb-components/table';
+export { default as HBTodoList } from '@hb-components/todolist';

@@ -14,5 +14,5 @@ const HTable = (props:tableProps) => {
      />
   );
 };
-export { HTable };
+export default HTable;
 

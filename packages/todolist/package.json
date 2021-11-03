@@ -5,7 +5,8 @@
   "keywords": [],
   "author": "yw <1499276590qq.com>",
   "license": "ISC",
-  "main": "lib/todolist.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"

@@ -7,7 +7,6 @@
   "license": "ISC",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "module": "lib/index.js",
   "access": "public",
   "directories": {
     "lib": "lib",
