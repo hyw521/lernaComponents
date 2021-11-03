@@ -1,5 +1,5 @@
 {
-  "name": "hb-components",
+  "name": "hb1-components",
   "version": "0.0.1",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
@@ -8,6 +8,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "module": "lib/index.js",
+  "access": "public",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -32,5 +33,6 @@
   "dependencies": {
     "@hb-components/table": "^0.0.1",
     "@hb-components/todolist": "^0.0.1"
-  }
+  },
+  "gitHead": "060cfe9b35f2daf84acf7917c1c0e9c08e08219d"
 }
