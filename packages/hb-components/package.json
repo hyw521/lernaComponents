@@ -16,7 +16,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.npm.taobao.org"
+    "registry": "https://registry.npmjs.org"
   },
   "repository": {
     "type": "git",
@@ -32,5 +32,6 @@
   "dependencies": {
     "@hb-components/table": "^0.0.8",
     "@hb-components/todolist": "^0.0.8"
-  }
+  },
+  "gitHead": "e16e0389a50cfc8cb31709e7b14584934e355c95"
 }
