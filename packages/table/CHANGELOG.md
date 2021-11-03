@@ -19,6 +19,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [0.0.1](https://github.com/hyw521/lernaComponents/compare/@hb-components/table@0.0.1...@hb-components/table@0.0.1) (2021-11-03)
+
+**Note:** Version bump only for package @hb-components/table
+
+
+
+
+
 ## [0.0.1](https://github.com/hyw521/lernaComponents/compare/@hb-components/table@0.0.2...@hb-components/table@0.0.1) (2021-11-03)
 
 **Note:** Version bump only for package @hb-components/table
