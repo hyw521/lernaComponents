@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/hyw521/lernaComponents#readme",
   "dependencies": {
-  
+    "@hb-components/table": "^0.0.0",
+    "@hb-components/todolist": "^0.0.0"
   }
 }

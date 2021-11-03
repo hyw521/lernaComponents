@@ -1,10 +1,17 @@
-15 error Error: Command failed with exit code 1: git remote update
-15 error fatal: unable to access 'https://github.com/hyw521/lernaComponents.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
-15 error error: Could not fetch origin
-15 error Fetching origin
-15 error     at makeError (/Users/hyw/Documents/web/lerna/lernaComponents/node_modules/@lerna/child-process/node_modules/execa/lib/error.js:60:11)
-15 error     at Function.module.exports.sync (/Users/hyw/Documents/web/lerna/lernaComponents/node_modules/@lerna/child-process/node_modules/execa/index.js:194:17)
-15 error     at Object.execSync (/Users/hyw/Documents/web/lerna/lernaComponents/node_modules/@lerna/child-process/index.js:39:16)
-15 error     at updateRemote (/Users/hyw/Documents/web/lerna/lernaComponents/node_modules/@lerna/version/lib/is-behind-upstream.js:34:16)
-15 error     at isBehindUpstream (/Users/hyw/Documents/web/lerna/lernaComponents/node_modules/@lerna/version/lib/is-behind-upstream.js:16:3)
-15 error     at VersionCommand.initialize (/Users/hyw/Documents/web/lerna/lernaComponents/node_modules/@lerna/version/index.js:153:9)
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   scope: 'hb-components',
+0 silly argv   globs: [],
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': 'lerna',
+0 silly argv   pkg: '@hb-components'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath /Users/hyw/Documents/web/lerna/lernaComponents
+3 info versioning independent
+4 error Error: Invalid tag name "@hb-components": Tags may not have any characters that encodeURIComponent encodes.
+4 error     at invalidTagName (/Users/hyw/Documents/web/lerna/lernaComponents/node_modules/npm-package-arg/npa.js:89:15)
+4 error     at fromRegistry (/Users/hyw/Documents/web/lerna/lernaComponents/node_modules/npm-package-arg/npa.js:343:13)
+4 error     at resolve (/Users/hyw/Documents/web/lerna/lernaComponents/node_modules/npm-package-arg/npa.js:80:12)
+4 error     at npa (/Users/hyw/Documents/web/lerna/lernaComponents/node_modules/npm-package-arg/npa.js:48:10)
+4 error     at AddCommand.initialize (/Users/hyw/Documents/web/lerna/lernaComponents/node_modules/@lerna/add/index.js:39:17)
