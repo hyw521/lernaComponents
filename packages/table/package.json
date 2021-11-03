@@ -1,6 +1,6 @@
 {
   "name": "@hb-components/table",
-  "version": "0.0.2",
+  "version": "0.0.0",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "yw <1499276590qq.com>",
@@ -28,6 +28,5 @@
   "bugs": {
     "url": "https://github.com/hyw521/lernaComponents/issues"
   },
-  "homepage": "https://github.com/hyw521/lernaComponents#readme",
-  "gitHead": "955493a4eb8e9dcc4c70d7feed9bed68642413d9"
+  "homepage": "https://github.com/hyw521/lernaComponents#readme"
 }
