@@ -1,6 +1,6 @@
 {
   "name": "@hb-components/todolist",
-  "version": "0.0.2",
+  "version": "0.0.0",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "yw <1499276590qq.com>",
@@ -27,5 +27,5 @@
     "url": "https://github.com/hyw521/lernaComponents/issues"
   },
   "homepage": "https://github.com/hyw521/lernaComponents#readme",
-  "gitHead": "060cfe9b35f2daf84acf7917c1c0e9c08e08219d"
+  "gitHead": "f08d2172379c94fbea6669265dae38a23eeb65d6"
 }
