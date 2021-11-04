@@ -35,7 +35,7 @@ export default defineConfig({
     // links: [{ rel: 'manifest', href: '/asset-manifest.json' }],
     hash: true,
     resolve: {
-      includes: ['docs','packages/hyw-table','packages/hyw-todo-list']
+      includes: ['docs','packages/table','packages/todolist']
     },
     navs: {
       'zh-CN': [
