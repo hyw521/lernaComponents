@@ -3,7 +3,6 @@ import React, {
   useReducer,
   useImperativeHandle,
   forwardRef,
-  useEffect,
   useState,
 } from "react";
 import { Table } from "antd";
@@ -59,7 +58,7 @@ const HTable = (props: tableProps<any>, ref: any) => {
   };
   // 分页配置
   let pagination = {
-    position: "bottom" as "bottom",
+    position: "bottom" as const,
     pageSize: state.pagination.pageSize,
     hideOnSinglePage: state.pagination.total < 1,
     current: state.pagination.page,
@@ -139,6 +138,13 @@ const HTable = (props: tableProps<any>, ref: any) => {
     getSelectedRows: () => selectedRows,
     // 设置表格勾选
     handleSelectedRows,
+    // 获取表格内的state
+    getTableState: () => {
+      const obj = {
+        filterState: [state, dispatch],
+      };
+      return obj;
+    },
   }));
 
   return (

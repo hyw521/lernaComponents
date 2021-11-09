@@ -62,6 +62,10 @@ export default () => {
     const rows = tableRef.current.getSelectedRows();
     console.log(rows);
   };
+  // 清空表格勾选
+  const handleClearRows = () => {
+    tableRef.current.handleSelectedRows([]);
+  };
   const columns = [
     { title: "Name", dataIndex: "name", key: "name" },
     { title: "Age", dataIndex: "age", key: "age" },
@@ -77,12 +81,19 @@ export default () => {
   return (
     <>
       <div className={"btn-div"}>
+        <Button
+          type={"primary"}
+          onClick={handleClearRows}
+          style={{ marginRight: "10px" }}
+        >
+          清空勾选
+        </Button>
         <Button type={"primary"} onClick={handleGetRows}>
           获取行信息
         </Button>
       </div>
       <HTable
-        rowKey={'key'}
+        rowKey={"key"}
         columns={columns}
         fetchData={fetchData}
         ref={tableRef}
