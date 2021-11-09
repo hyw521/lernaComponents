@@ -27,7 +27,7 @@
     "forceConsistentCasingInFileNames": true,        /* Disallow inconsistently-cased references to the same file. */
   },
   "include": [
-    "packages/*/src"
+    "packages/**/src"
   ],
   "exclude": [
     "node_modules",
