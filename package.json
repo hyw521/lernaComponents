@@ -5,23 +5,29 @@
     "dumi:dev": "dumi dev",
     "dumi:build": "lerna run build && dumi build",
     "build": "lerna exec tsc",
-    "publish": "lerna publish"
+    "publish": "lerna publish",
+    "lint": "lerna exec eslint src",
+    "lint:create": "eslint --init"
   },
   "devDependencies": {
-    "@types/react": "^16.9.14",
-    "@types/react-dom": "^16.9.14",
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "babel-plugin-import": "^1.13.3",
+    "eslint": "^8.2.0",
+    "eslint-plugin-react": "^7.26.1",
     "lerna": "^4.0.0",
-    "typescript": "^4.4.4",
-    "babel-plugin-import": "^1.13.3"
+    "typescript": "^4.4.4"
   },
   "workspaces": [
     "packages/*"
   ],
   "dependencies": {
-    "antd": "^4.16.13",
+    "antd": "^3.19.5",
     "dumi": "^1.1.7",
-    "react": "^16.9.14",
-    "react-dom": "^16.9.14"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "version": "0.0.2"
 }

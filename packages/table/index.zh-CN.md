@@ -13,9 +13,39 @@ group:
 > 描述
 
 ```tsx
-import React from "react";
+import React, { useEffect, useState, useRef, useCallback } from "react";
 import HTable from "./src/index.tsx";
+import { getDataList } from "./mock/test";
 export default () => {
+  const tableRef: any = useRef();
+  const fetchData = async (pagination, dispatch): Promise<void> => {
+    const queryObj = {
+      page: pagination.page,
+      pageSize: pagination.pageSize,
+    };
+    const res = await getDataList(queryObj);
+    if (res.code === 200) {
+      const { list, allCount } = res;
+      dispatch({
+        type: "SET_PAGINATION",
+        payload: {
+          pagination: { ...pagination, total: allCount },
+        },
+      });
+      dispatch({
+        type: "SET_DATA_SOURCE",
+        payload: {
+          dataSource: list,
+        },
+      });
+    }
+  };
+  const getTableList = useCallback(() => {
+    tableRef.current.handleFilter(1, 10);
+  }, []);
+  useEffect(() => {
+    getTableList();
+  }, []);
   const columns = [
     { title: "Name", dataIndex: "name", key: "name" },
     { title: "Age", dataIndex: "age", key: "age" },
@@ -27,42 +57,8 @@ export default () => {
       render: () => <a>Delete</a>,
     },
   ];
-
-  const data = [
-    {
-      key: 1,
-      name: "John Brown",
-      age: 32,
-      address: "New York No. 1 Lake Park",
-      description:
-        "My name is John Brown, I am 32 years old, living in New York No. 1 Lake Park.",
-    },
-    {
-      key: 2,
-      name: "Jim Green",
-      age: 42,
-      address: "London No. 1 Lake Park",
-      description:
-        "My name is Jim Green, I am 42 years old, living in London No. 1 Lake Park.",
-    },
-    {
-      key: 3,
-      name: "Not Expandable",
-      age: 29,
-      address: "Jiangsu No. 1 Lake Park",
-      description: "This not expandable",
-    },
-    {
-      key: 4,
-      name: "Joe Black",
-      age: 32,
-      address: "Sidney No. 1 Lake Park",
-      description:
-        "My name is Joe Black, I am 32 years old, living in Sidney No. 1 Lake Park.",
-    },
-  ];
-  return(
-      <HTable columns={columns} dataSource={data} />
-  ) 
+  return <HTable columns={columns} fetchData={fetchData} ref={tableRef} />;
 };
 ```
+
+<API src="./src/index.tsx"></API>
