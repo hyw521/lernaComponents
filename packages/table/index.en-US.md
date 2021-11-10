@@ -11,6 +11,7 @@ group:
 # `Table`
 
 > TODO: description
+## useage
 
 ```tsx
 import React, { useReducer, useEffect, useState, useRef } from "react";

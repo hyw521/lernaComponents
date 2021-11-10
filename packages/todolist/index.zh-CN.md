@@ -11,7 +11,7 @@ group:
 # `TodoList`
 
 > TODO: 描述
-## Usage
+## 用法
 
 ```tsx
 import React from 'react';

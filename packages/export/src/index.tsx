@@ -91,7 +91,7 @@ const Export = (props: DownloadProps) => {
     <>
       {replaceElement && replaceElement(handleDownload)}
       {!replaceElement && (
-        <Button loading={loading} onClick={handleDownload}>
+        <Button type={'primary'} loading={loading} onClick={handleDownload}>
           {text}
         </Button>
       )}

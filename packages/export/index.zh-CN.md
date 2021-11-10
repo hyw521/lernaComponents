@@ -1,11 +1,28 @@
-# `@hb-components/export`
+---
+nav:
+  title: 组件
+  path: /components
+group:
+  title: Export
+  path: /export
+  order: 4
+---
 
-> TODO: description
+# `Export`
 
-## Usage
+> 描述
+## 用法
+
+```tsx
+import React, { useEffect, useState, useRef, useCallback } from "react";
+import HBExport from "./src/index.tsx";
+
+export default ()=>{
+
+    return (
+        <HBExport url={'1111'} methods={'a'} />
+    )
+}
 
 ```
-const download = require('@hb-components/export');
-
-// TODO: DEMONSTRATE API
-```
+<API src="./src/index.tsx"></API>

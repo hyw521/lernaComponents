@@ -35,7 +35,7 @@ export default defineConfig({
     // links: [{ rel: 'manifest', href: '/asset-manifest.json' }],
     hash: true,
     resolve: {
-      includes: ['docs','packages/table','packages/todolist']
+      includes: ['docs','packages/table','packages/todolist','packages/export']
     },
     navs: {
       'zh-CN': [
