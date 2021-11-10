@@ -25,8 +25,9 @@ const Export = (props: DownloadProps) => {
     const a = document.createElement("a");
     a.href = url;
     a.target = isNewWindow ? "_blank" : "";
-    if(fileName){ // ie不兼容，不同源无效果
-        a.download = fileName
+    if (fileName) {
+      // ie不兼容，不同源无效果
+      a.download = fileName;
     }
     document.body.appendChild(a);
     a.click();
@@ -47,11 +48,11 @@ const Export = (props: DownloadProps) => {
         const regInner = reg.exec(data.headers["content-disposition"]);
         let file_name = "";
         if (regInner) {
-            file_name = regInner[0].slice(9);
-            file_name = decodeURI(file_name);
+          file_name = regInner[0].slice(9);
+          file_name = decodeURI(file_name);
         }
-        if(fileName){
-            file_name = fileName
+        if (fileName) {
+          file_name = fileName;
         }
         const reader = new FileReader();
         reader.onload = function () {
@@ -91,7 +92,7 @@ const Export = (props: DownloadProps) => {
     <>
       {replaceElement && replaceElement(handleDownload)}
       {!replaceElement && (
-        <Button type={'primary'} loading={loading} onClick={handleDownload}>
+        <Button type={"primary"} loading={loading} onClick={handleDownload}>
           {text}
         </Button>
       )}
