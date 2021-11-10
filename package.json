@@ -7,7 +7,9 @@
     "build": "lerna exec tsc",
     "publish": "lerna publish",
     "lint": "lerna exec eslint src",
-    "lint:create": "eslint --init"
+    "lint:create": "eslint --init",
+    "clean": "lerna exec rimraf lib esm dist",
+    "build:glup": "npm run clean && lerna exec gulp"
   },
   "devDependencies": {
     "@types/react": "^16.7.18",
@@ -26,9 +28,18 @@
     "packages/*"
   ],
   "dependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@babel/runtime": "^7.16.3",
     "antd": "^3.19.5",
     "classnames": "^2.3.1",
     "dumi": "^1.1.7",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
