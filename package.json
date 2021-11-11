@@ -8,8 +8,9 @@
     "publish": "lerna publish",
     "lint": "lerna exec eslint src",
     "lint:create": "eslint --init",
+    "build:types": "lerna exec tsc && lerna exec cpr lib esm",
     "clean": "lerna exec rimraf lib esm dist",
-    "build:glup": "npm run clean && lerna exec gulp"
+    "build:glup": "npm run clean && npm run build:types && lerna exec gulp"
   },
   "devDependencies": {
     "@types/react": "^16.7.18",
