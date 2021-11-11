@@ -7,13 +7,15 @@
   "license": "ISC",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "module": "esm/index.js",
   "access": "public",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "lib",
+    "esm"
   ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
@@ -30,6 +32,7 @@
   },
   "homepage": "https://github.com/hyw521/lernaComponents#readme",
   "dependencies": {
+    "@hb-components/export": "^0.0.0",
     "@hb-components/table": "^1.0.2",
     "@hb-components/todolist": "^1.0.2"
   },
