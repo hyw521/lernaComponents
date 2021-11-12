@@ -6,7 +6,7 @@ const TodoList = () => {
     const [source, setSource] = useState<item[]>([]);
 
     const init = () => {
-        setSource([{ name: 'hyw', age: 24 }, { name: 'xl', age: 23 }])
+        setSource([{ name: 'hh', age: 24 },{ name: 'yy', age: 24 }, { name: 'xx', age: 23 },{ name: 'll', age: 23 }])
     };
     useEffect(() => {
         init();
