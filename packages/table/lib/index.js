@@ -23,7 +23,7 @@ var _antd = require("antd");
 
 require("antd/dist/antd.css");
 
-require("./index.less");
+require("./style/index.less");
 
 var _excluded = ["columns", "initState", "fetchData"];
 
