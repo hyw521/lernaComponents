@@ -4,7 +4,6 @@
   "scripts": {
     "dumi:dev": "dumi dev",
     "dumi:build": "lerna run build && dumi build",
-    "build": "lerna exec tsc",
     "publish": "lerna publish",
     "lint": "lerna exec eslint src",
     "lint:create": "eslint --init",
