@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://github.com/hyw521/lernaComponents/compare/@hb-components/table@1.0.4...@hb-components/table@1.0.5) (2021-11-15)
+
+**Note:** Version bump only for package @hb-components/table
+
+
+
+
+
 ## [1.0.4](https://github.com/hyw521/lernaComponents/compare/@hb-components/table@1.0.3...@hb-components/table@1.0.4) (2021-11-12)
 
 **Note:** Version bump only for package @hb-components/table
