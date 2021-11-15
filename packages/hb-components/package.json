@@ -34,7 +34,7 @@
   "dependencies": {
     "@hb-components/export": "^0.0.2",
     "@hb-components/table": "^1.0.5",
-    "@hb-components/todolist": "^1.0.5"
+    "@hb-components/todo-list": "^1.0.5"
   },
   "gitHead": "f08d2172379c94fbea6669265dae38a23eeb65d6"
 }

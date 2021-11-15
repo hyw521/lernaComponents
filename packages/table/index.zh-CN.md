@@ -11,18 +11,27 @@ group:
 # `Table`
 
 > 描述
+
 ## 用法
 
 ```tsx
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import { message, Button } from "antd";
-import HTable from "./src/index.tsx";
+import HTable from "./esm";
 import { getDataList } from "./mock/test";
 import classnames from "classnames";
 import "./style/md.less";
 export default () => {
   const tableRef: any = useRef();
   const [loading, setLoading] = useState(true);
+  const initState = {
+    pagination: {
+      page: 1,
+      pageSize: 10,
+      total: 0,
+    },
+    dataSource: [],
+  };
   const fetchData = async (pagination, dispatch): Promise<void> => {
     setLoading(true);
     const queryObj = {
@@ -99,6 +108,7 @@ export default () => {
         fetchData={fetchData}
         ref={tableRef}
         loading={loading}
+        initState={initState}
       />
     </>
   );

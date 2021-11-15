@@ -25,10 +25,16 @@ var TodoList = function TodoList() {
 
   var init = function init() {
     setSource([{
-      name: 'hyw',
+      name: 'hh',
       age: 24
     }, {
-      name: 'xl',
+      name: 'yy',
+      age: 24
+    }, {
+      name: 'xx',
+      age: 23
+    }, {
+      name: 'll',
       age: 23
     }]);
   };
