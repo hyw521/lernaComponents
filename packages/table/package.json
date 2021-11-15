@@ -16,6 +16,11 @@
     "lib",
     "esm"
   ],
+  "sideEffects": [
+    "esm/**/style/*",
+    "lib/**/style/*",
+    "*.less"
+  ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
