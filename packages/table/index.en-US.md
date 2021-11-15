@@ -15,6 +15,7 @@ group:
 
 ```tsx
 import React, { useReducer, useEffect, useState, useRef } from "react";
+import "antd/dist/antd.css";
 import HTable from "./src/index.tsx";
 import {getDataList} from './mock/test'
 export default () => {

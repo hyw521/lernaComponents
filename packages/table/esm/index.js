@@ -11,8 +11,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useReducer, useImperativeHandle, forwardRef, useState } from "react";
 import { Table } from "antd";
-import "antd/dist/antd.css";
-import "./style/index.less";
 
 var HTable = function HTable(props, ref) {
   var columns = props.columns,

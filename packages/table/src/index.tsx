@@ -6,9 +6,7 @@ import React, {
   useState,
 } from "react";
 import { Table } from "antd";
-import "antd/dist/antd.css";
 import { initStateProps, tableProps } from "./type";
-import "./style/index.less";
 
 const HTable = (props: tableProps<any>, ref: any) => {
   const {
