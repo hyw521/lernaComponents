@@ -1,0 +1,35 @@
+.api-table {
+  display: table;
+  table-layout: fixed;
+  thead {
+    tr {
+      display: table-row;
+      text-align: left;
+      th {
+        span {
+          display: inline-block;
+          max-width: 100%;
+          vertical-align: top;
+        }
+        &:nth-child(1) {
+          width: 16%;
+          min-width: 128px;
+          overflow-wrap: break-word;
+        }
+        &:nth-child(4) {
+            width: 14%;
+            min-width: 112px;
+            overflow-wrap: break-word;
+          }
+      }
+    }
+  }
+  tbody {
+    tr {
+      td:nth-child(1) {
+        width: 10%;
+        overflow-wrap: break-word;
+      }
+    }
+  }
+}
