@@ -4,3 +4,4 @@ node_modules
 .umi-production
 .env.local
 dist/
+.vscode

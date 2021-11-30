@@ -1,0 +1,38 @@
+{
+  "name": "@hb-components/{{kebabCase name}}",
+  "version": "0.0.0",
+  "description": "{{description-US}}",
+  "keywords": [],
+  "author": "{{author}} <{{email}}>",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "module": "esm/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "esm"
+  ],
+  "sideEffects": [
+    "esm/**/style/*",
+    "lib/**/style/*",
+    "*.less"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+{{gitAddress}}.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "{{gitAddress}}/issues"
+  },
+  "homepage": "{{gitAddress}}#readme"
+}
